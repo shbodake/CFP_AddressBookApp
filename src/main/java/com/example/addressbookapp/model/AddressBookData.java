@@ -3,22 +3,22 @@ package com.example.addressbookapp.model;
 import com.example.addressbookapp.dto.AddressBookDTO;
 
 public class AddressBookData {
-	private long contactId;
+	private int contactId;
 	private String firstName;
 	private String lastName;
 	private long phoneNum;
 	public AddressBookData() {}
-	public AddressBookData(long id,AddressBookDTO addressBookDTO) {
+	public AddressBookData(int id,AddressBookDTO addressBookDTO) {
 		super();
 		this.contactId = id;
 		this.firstName = addressBookDTO.firstName;
 		this.lastName = addressBookDTO.lastName;
 		this.phoneNum = addressBookDTO.phoneNum;
 	}
-	public long getContactId() {
+	public int getContactId() {
 		return contactId;
 	}
-	public void setContactId(long contactId) {
+	public void setContactId(int contactId) {
 		this.contactId = contactId;
 	}
 	public String getFirstName() {
