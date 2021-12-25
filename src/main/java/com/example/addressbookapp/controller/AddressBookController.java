@@ -43,9 +43,9 @@ public class AddressBookController {
 	 * @return : Contact details of the employee
 	 */
 	@GetMapping("/get/{id}")
-	public ResponseEntity<ResponseDTO> getAddressBookData(@PathVariable("id") int id){
+	public ResponseEntity<ResponseDTO> getAddressBookData(@PathVariable("id") int contactId){
 		AddressBookData contactData = null;
-		contactData = addressBookService.getAddressBookDataById(id);
+		contactData = addressBookService.getAddressBookDataById(contactId);
 		ResponseDTO respDTO = new ResponseDTO("Get Call for Id Successful", contactData);
 		return new ResponseEntity<ResponseDTO>(respDTO, HttpStatus.OK);
 	}
@@ -68,8 +68,8 @@ public class AddressBookController {
 	 * @param addressBookDTO : details id, Firstname, Lastname, Address, City & phoneNum
 	 * @return : details
 	 */
-	@PutMapping("/update")
-	public ResponseEntity<ResponseDTO> updateAddressBookData(@RequestBody AddressBookDTO addressBookDTO){
+	@PutMapping("/update/{contactId}")
+	public ResponseEntity<ResponseDTO> updateAddressBookData(@PathVariable("contactId")int contactId, @RequestBody AddressBookDTO addressBookDTO){
 		AddressBookData contactData = null;
 		contactData = addressBookService.updateAddressBookData(1, addressBookDTO);
 		ResponseDTO respDTO = new ResponseDTO("Updated AddressBook data Successfully", contactData);
@@ -82,9 +82,9 @@ public class AddressBookController {
 	 * @return : contact id which is deleted
 	 */
 	@DeleteMapping("/delete/{id}")
-	public ResponseEntity<ResponseDTO> deleteAddressBookData(@PathVariable("id") int id){
-		addressBookService.deleteAddressBookData(id);
-		ResponseDTO respDTO = new ResponseDTO("Deleted AddressBook data Successfully", "Deleted id : " +id);
+	public ResponseEntity<ResponseDTO> deleteAddressBookData(@PathVariable("contactId") int contactId){
+		addressBookService.deleteAddressBookData(contactId);
+		ResponseDTO respDTO = new ResponseDTO("Deleted AddressBook data Successfully", "Deleted id : " +contactId);
 		return new ResponseEntity<ResponseDTO>(respDTO, HttpStatus.OK);
 	}
 }
