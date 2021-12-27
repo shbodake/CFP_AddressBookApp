@@ -6,18 +6,18 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 import com.example.addressbookapp.dto.AddressBookDTO;
+import com.example.addressbookapp.exceptions.AddressBookException;
 import com.example.addressbookapp.model.AddressBookData;
 
 @Service
 public class AddressBookService implements IAddressBookService{
+	private List<AddressBookData> addressBookList = new ArrayList<>();
 	/**
 	 * Call Get method
 	 * @return : Http Status & Contact details of the employee
 	 */
 	@Override
 	public List<AddressBookData> getAddressBookData() {
-		List<AddressBookData> addressBookList = new ArrayList<>();
-		addressBookList.add(new AddressBookData(1, new AddressBookDTO("Sayali", "Bodake", "sai paradise apt", "Nasik", 9850521236l)));
 		return addressBookList;
 	}
 
@@ -27,10 +27,8 @@ public class AddressBookService implements IAddressBookService{
 	 * @return : Contact details of the employee
 	 */
 	@Override
-	public AddressBookData getAddressBookDataById(int id) {
-		AddressBookData contactData = null;
-		contactData = new AddressBookData(1, new AddressBookDTO("Sayali", "Bodake", "Sai paradise apt", "Nasik", 9850521236l));
-		return contactData;
+	public AddressBookData getAddressBookDataById(int contactId) {
+		return addressBookList.stream().filter(empData -> empData.getContactId()== contactId).findFirst().orElseThrow(() -> new AddressBookException("Contact Not Found"));
 	}
 
 	/**
@@ -41,7 +39,8 @@ public class AddressBookService implements IAddressBookService{
 	@Override
 	public AddressBookData createAddressBookData(AddressBookDTO addressBookDTO) {
 		AddressBookData contactData = null;
-		contactData = new AddressBookData(1, addressBookDTO);
+		contactData = new AddressBookData(addressBookList.size()+1,addressBookDTO);
+		addressBookList.add(contactData);
 		return contactData;
 	}
 
@@ -51,9 +50,11 @@ public class AddressBookService implements IAddressBookService{
 	 * @return : details
 	 */
 	@Override
-	public AddressBookData updateAddressBookData(int id, AddressBookDTO addressBookDTO) {
-		AddressBookData contactData = null;
-		contactData = new AddressBookData(1, addressBookDTO);
+	public AddressBookData updateAddressBookData(int contactId, AddressBookDTO addressBookDTO) {
+		AddressBookData contactData  = this.getAddressBookDataById(contactId);
+		contactData.setFirstName(addressBookDTO.firstName);
+		contactData.setLastName(addressBookDTO.lastName);
+		addressBookList.set(contactId-1,contactData);
 		return contactData;
 	}
 
@@ -63,7 +64,7 @@ public class AddressBookService implements IAddressBookService{
 	 * @return : contact id which is deleted
 	 */
 	@Override
-	public void deleteAddressBookData(int id) {
-		
+	public void deleteAddressBookData(int contactId) {
+		addressBookList.remove(contactId-1);
 	}
 }
