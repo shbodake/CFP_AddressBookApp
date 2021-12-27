@@ -1,23 +1,26 @@
 package com.example.addressbookapp.dto;
 
-public class ResponseDTO {
+import lombok.Data;
+
+/**
+ * @Data : Auto Generate Setters, Getters and ToString 
+ */
+
+
+public @Data class ResponseDTO {
 	private String message;
 	private Object data;
+	
+	/**
+	 * ResponseDTO : constructor
+	 * @param message
+	 * @param data
+	 */
+	
 	public ResponseDTO(String message, Object data) {
 		super();
 		this.message = message;
 		this.data = data;
 	}
-	public String getMessage() {
-		return message;
-	}
-	public void setMessage(String message) {
-		this.message = message;
-	}
-	public Object getData() {
-		return data;
-	}
-	public void setData(Object data) {
-		this.data = data;
-	}
+	
 }
