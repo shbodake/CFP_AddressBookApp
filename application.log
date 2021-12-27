@@ -47,3 +47,10 @@
 2021-12-27 23:53:47.061  WARN 192 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
 2021-12-27 23:53:47.196  INFO 192 --- [restartedMain] c.e.a.AddressBookAppApplication          : Started AddressBookAppApplication in 1.212 seconds (JVM running for 299.792)
 2021-12-27 23:53:47.202  INFO 192 --- [restartedMain] c.e.a.AddressBookAppApplication          : Address Book App Started in COMMON Environment
+2021-12-27 23:55:21.230  INFO 5968 --- [restartedMain] c.e.a.AddressBookAppApplication          : Starting AddressBookAppApplication using Java 17.0.1 on DESKTOP with PID 5968 (H:\Spring-Projects\Address_BookApp\target\classes started by sayali in H:\Spring-Projects\Address_BookApp)
+2021-12-27 23:55:21.233 DEBUG 5968 --- [restartedMain] c.e.a.AddressBookAppApplication          : Running with Spring Boot v2.6.2, Spring v5.3.14
+2021-12-27 23:55:21.234  INFO 5968 --- [restartedMain] c.e.a.AddressBookAppApplication          : No active profile set, falling back to default profiles: default
+2021-12-27 23:55:28.978  WARN 5968 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-27 23:55:29.592  WARN 5968 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-12-27 23:55:30.269  INFO 5968 --- [restartedMain] c.e.a.AddressBookAppApplication          : Started AddressBookAppApplication in 9.924 seconds (JVM running for 11.675)
+2021-12-27 23:55:30.278  INFO 5968 --- [restartedMain] c.e.a.AddressBookAppApplication          : Address Book App Started in COMMON Environment
