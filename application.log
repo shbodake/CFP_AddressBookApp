@@ -19,3 +19,31 @@
 2021-12-27 23:48:37.476  INFO 6656 --- [restartedMain] c.e.a.AddressBookAppApplication          : Starting AddressBookAppApplication using Java 17.0.1 on DESKTOP with PID 6656 (H:\Spring-Projects\Address_BookApp\target\classes started by sayali in H:\Spring-Projects\Address_BookApp)
 2021-12-27 23:48:37.709 DEBUG 6656 --- [restartedMain] c.e.a.AddressBookAppApplication          : Running with Spring Boot v2.6.2, Spring v5.3.14
 2021-12-27 23:48:37.732  INFO 6656 --- [restartedMain] c.e.a.AddressBookAppApplication          : No active profile set, falling back to default profiles: default
+2021-12-27 23:48:49.902  INFO 192 --- [restartedMain] c.e.a.AddressBookAppApplication          : Starting AddressBookAppApplication using Java 17.0.1 on DESKTOP with PID 192 (H:\Spring-Projects\Address_BookApp\target\classes started by sayali in H:\Spring-Projects\Address_BookApp)
+2021-12-27 23:48:49.907 DEBUG 192 --- [restartedMain] c.e.a.AddressBookAppApplication          : Running with Spring Boot v2.6.2, Spring v5.3.14
+2021-12-27 23:48:49.909  INFO 192 --- [restartedMain] c.e.a.AddressBookAppApplication          : No active profile set, falling back to default profiles: default
+2021-12-27 23:48:58.512  WARN 192 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-27 23:49:00.703  WARN 192 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-12-27 23:49:01.998  INFO 192 --- [restartedMain] c.e.a.AddressBookAppApplication          : Started AddressBookAppApplication in 12.912 seconds (JVM running for 14.594)
+2021-12-27 23:49:02.008  INFO 192 --- [restartedMain] c.e.a.AddressBookAppApplication          : Address Book App Started in COMMON Environment
+2021-12-27 23:52:57.123  INFO 192 --- [restartedMain] c.e.a.AddressBookAppApplication          : Starting AddressBookAppApplication using Java 17.0.1 on DESKTOP with PID 192 (H:\Spring-Projects\Address_BookApp\target\classes started by sayali in H:\Spring-Projects\Address_BookApp)
+2021-12-27 23:52:57.126 DEBUG 192 --- [restartedMain] c.e.a.AddressBookAppApplication          : Running with Spring Boot v2.6.2, Spring v5.3.14
+2021-12-27 23:52:57.127  INFO 192 --- [restartedMain] c.e.a.AddressBookAppApplication          : No active profile set, falling back to default profiles: default
+2021-12-27 23:52:59.092  WARN 192 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-27 23:52:59.226  WARN 192 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-12-27 23:52:59.562  INFO 192 --- [restartedMain] c.e.a.AddressBookAppApplication          : Started AddressBookAppApplication in 2.535 seconds (JVM running for 252.158)
+2021-12-27 23:52:59.569  INFO 192 --- [restartedMain] c.e.a.AddressBookAppApplication          : Address Book App Started in COMMON Environment
+2021-12-27 23:53:25.118  INFO 192 --- [restartedMain] c.e.a.AddressBookAppApplication          : Starting AddressBookAppApplication using Java 17.0.1 on DESKTOP with PID 192 (H:\Spring-Projects\Address_BookApp\target\classes started by sayali in H:\Spring-Projects\Address_BookApp)
+2021-12-27 23:53:25.119 DEBUG 192 --- [restartedMain] c.e.a.AddressBookAppApplication          : Running with Spring Boot v2.6.2, Spring v5.3.14
+2021-12-27 23:53:25.119  INFO 192 --- [restartedMain] c.e.a.AddressBookAppApplication          : No active profile set, falling back to default profiles: default
+2021-12-27 23:53:26.850  WARN 192 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-27 23:53:27.095  WARN 192 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-12-27 23:53:27.256  INFO 192 --- [restartedMain] c.e.a.AddressBookAppApplication          : Started AddressBookAppApplication in 2.193 seconds (JVM running for 279.852)
+2021-12-27 23:53:27.261  INFO 192 --- [restartedMain] c.e.a.AddressBookAppApplication          : Address Book App Started in COMMON Environment
+2021-12-27 23:53:46.067  INFO 192 --- [restartedMain] c.e.a.AddressBookAppApplication          : Starting AddressBookAppApplication using Java 17.0.1 on DESKTOP with PID 192 (H:\Spring-Projects\Address_BookApp\target\classes started by sayali in H:\Spring-Projects\Address_BookApp)
+2021-12-27 23:53:46.067 DEBUG 192 --- [restartedMain] c.e.a.AddressBookAppApplication          : Running with Spring Boot v2.6.2, Spring v5.3.14
+2021-12-27 23:53:46.068  INFO 192 --- [restartedMain] c.e.a.AddressBookAppApplication          : No active profile set, falling back to default profiles: default
+2021-12-27 23:53:46.875  WARN 192 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-27 23:53:47.061  WARN 192 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-12-27 23:53:47.196  INFO 192 --- [restartedMain] c.e.a.AddressBookAppApplication          : Started AddressBookAppApplication in 1.212 seconds (JVM running for 299.792)
+2021-12-27 23:53:47.202  INFO 192 --- [restartedMain] c.e.a.AddressBookAppApplication          : Address Book App Started in COMMON Environment
