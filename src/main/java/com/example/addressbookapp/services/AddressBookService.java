@@ -11,7 +11,9 @@ import com.example.addressbookapp.model.AddressBookData;
 
 @Service
 public class AddressBookService implements IAddressBookService{
+
 	private List<AddressBookData> addressBookList = new ArrayList<>();
+
 	/**
 	 * Call Get method
 	 * @return : Http Status & Contact details of the employee
