@@ -6,8 +6,8 @@ import lombok.Data;
  * @Data : Auto Generate Setters, Getters and ToString 
  */
 
-@Data
-public class ResponseDTO {
+
+public @Data class ResponseDTO {
 	private String message;
 	private Object data;
 	
